@@ -1,0 +1,43 @@
+/* stili generali pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* stili header */
+header {
+    padding: 20px;
+    height: 80px;
+    width: 100%;
+    /* regola debug */
+    background-color: bisque;
+    display: flex;
+    position: fixed;
+    z-index: 500;
+}
+
+.logo {
+    width: 200px;
+    padding: 5px;
+}
+
+.search-label {
+    width: 100%;
+}
+
+.iconhead {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+

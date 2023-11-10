@@ -43,7 +43,7 @@ header {
 
 /* stili main */
 .wrapper {
-    height: 100vh;
+    height: calc(100vh - 80px);
     display: flex;
 }
 

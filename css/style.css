@@ -41,3 +41,38 @@ header {
     margin-left: 20px;
 }
 
+/* stili main */
+.wrapper {
+    height: 100vh;
+    display: flex;
+}
+
+/* stili SIDE BAR */
+.side-bar {
+    width: 100px;
+    /* regole debug */
+    background-color: aqua;
+}
+
+
+/* stili CONTENT */
+.content {
+    width: calc(100vw - 100px);
+    background-color: #141922;
+    overflow-y: auto;
+    /* regole debug */
+    background-color: hwb(55 0% 0% / 0.162);
+}
+
+
+
+@media all and (max-width:768px) {
+    .side-bar {
+        width: 50px;
+    }
+
+    .content {
+        width: calc(100vw - 50px);
+    }
+    
+}

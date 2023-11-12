@@ -53,6 +53,11 @@ header {
     align-items: center;
     padding: 20px 0px;
     color: white;
+    /* background-image: url("img /sidebar-bg."); */
+}
+
+.menu {
+    padding-bottom: 5px;
 }
 
 .menu a, .menu-bottom a {
@@ -80,6 +85,41 @@ header {
     /* regole debug */
     background-color: hwb(55 0% 0% / 0.162);
 }
+
+/* stili nav bar content */
+.nav-content {
+    height: 100px;
+    width: 100%;
+    /* display: flex; */
+    padding: 20px;
+    background-color: #1b72e8;
+    color: white;
+}
+
+.nav-content span{
+    font-size: 14px;
+    padding-right: 5px;
+
+}
+
+h1 {
+    display: inline-block;
+    font-size: 30px;
+}
+
+ 
+
+ .number {
+    display: flex;
+    flex-direction: column;
+ } 
+
+ 
+
+
+
+
+
 
 
 

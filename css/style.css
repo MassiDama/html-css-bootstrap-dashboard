@@ -138,21 +138,42 @@ h1 {
 .title-table {
     border: 1px solid #dadada;
     background-color: hsl(0,0%,90%);
-    margin: 20px 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 7px 7px 10px 7px;
+
+    
 }
 
-
-/* stili struttura grafico */
 .struttura-table {
     padding: 15px;
     border: 1px solid #dadada;
     background-color: white;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 .grafico {
     border: 1px solid #dadada;
     padding: 10px;
 }
+
+/* stili struttra table prossime classi */
+.n {
+    width: 50%;
+}
+
+.btn-light {
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
 
 
 .grafico img{

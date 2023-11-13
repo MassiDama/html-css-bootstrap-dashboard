@@ -83,7 +83,7 @@ header {
     background-color: #141922;
     overflow-y: auto;
     /* regole debug */
-    background-color: hwb(55 0% 0% / 0.162);
+    background-color: #f8f9fa;
 }
 
 /* stili nav bar content */
@@ -132,6 +132,31 @@ h1 {
 .table-prossime-classi img{
     width: 20px;
 
+}
+
+/* stili main content */
+.title-table {
+    border: 1px solid #dadada;
+    background-color: hsl(0,0%,90%);
+    margin: 20px 10px;
+}
+
+
+/* stili struttura grafico */
+.struttura-table {
+    padding: 15px;
+    border: 1px solid #dadada;
+    background-color: white;
+}
+
+.grafico {
+    border: 1px solid #dadada;
+    padding: 10px;
+}
+
+
+.grafico img{
+    width: 100%;
 }
 
 

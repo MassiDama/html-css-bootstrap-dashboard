@@ -100,12 +100,21 @@ header {
     font-size: 14px;
 }
 
+
 .title-nav span{
     margin: 0 2px;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 13px;
     background-color:#165bba;
     font-size: 13px;
+}
+
+.breadcrumb-title {
+    display: flex;
+}
+
+.breadcrumb-plus {
+    display: none;
 }
 
 h1 {
@@ -118,36 +127,41 @@ h1 {
     flex-direction: column;
  }
 
+ .number span {
+    margin-bottom: 10px;
+ }
+
 .new {
     display: flex;
     align-items: center;
 }
 
- .student i {
-    font-size: 30px;
-    padding-left: 10px;
- }
+.new span {
+    margin-right: 10px;
+}
 
- 
-.table-prossime-classi img{
-    width: 20px;
-
+.btn-primary {
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
 /* stili main content */
 .title-table {
     border: 1px solid #dadada;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     background-color: hsl(0,0%,90%);
     margin-top: 20px;
     margin-left: 10px;
     padding: 7px 7px 10px 7px;
-
-    
 }
 
 .struttura-table {
     padding: 15px;
     border: 1px solid #dadada;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     background-color: white;
     margin-bottom: 20px;
     margin-left: 10px;
@@ -159,12 +173,27 @@ h1 {
 }
 
 /* stili struttra table prossime classi */
+.table-prossime-classi img{
+    width: 20px;
+    margin-right: 5px;
+
+}
+
 .n {
     width: 50%;
+    text-align: left;
 }
 
 .btn-light {
     border: 1px solid black;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
 }
 
 
@@ -200,4 +229,14 @@ h1 {
     .menu a, .menu-bottom a {
         display: none;
     }
+
+    .breadcrumb {
+        display: none;
+    }
+
+    .breadcrumb-plus {
+        display: inline-block;
+    }
+
+
 }

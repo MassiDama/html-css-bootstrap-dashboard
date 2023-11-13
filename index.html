@@ -77,12 +77,17 @@
                                     <h1>Boolean</h1>
                                     <span>Piano blaze</span>  
                                 </div>
-                                <div class="breadcrumb">
+                                <div class="breadcrumb-title">
                                     <span>3 app</span>
                                     <div>&raquo;</div>
-                                    <span>Boolean mobile app</span>
-                                    <span>Boolean web app</span>
-                                    <span>Boolean blog app</span>
+                                    <div class="breadcrumb">
+                                        <span>Boolean mobile app</span>
+                                        <span>Boolean web app</span>
+                                        <span>Boolean blog app</span>
+                                    </div>
+                                    <div class="breadcrumb-plus">
+                                        <span><i class="fa-solid fa-plus"></i></span>
+                                    </div>
                                 </div>
                             </div>    
                         </div>
@@ -95,7 +100,76 @@
                         <div class="col-lg-2 col-md-3">
                             <div class="student new">
                                 <span>Nuovi Studenti</span>
-                                <i class="fa-solid fa-square-plus"></i>
+                                <!-- layout bootstrap (forms) -->
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <form class="row g-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label">Nome</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Cognome</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Email</label>
+                                                <label class="visually-hidden" for="autoSizingInputGroup"></label>
+                                                <div class="input-group">
+                                                  <div class="input-group-text">@</div>
+                                                  <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label for="inputAddress" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="inputAddress" placeholder="">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputCity" class="form-label">Città</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="inputState" class="form-label">Stato</label>
+                                                <select id="inputState" class="form-select">
+                                                        <option selected>Scegli...</option>
+                                                        <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label for="inputZip" class="form-label">Cap</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="inputZip" class="form-label">Foto</label>
+                                                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                      Seleziona per proseguire
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                                <button type="button" class="btn btn-warning">Svuota</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>  
                         </div>
                     </div>  
@@ -104,9 +178,10 @@
                 <!-- stuttura main content -->
                 <section class="main-content">
                     
-                    <!-- struttura tabella prossime classi -->
+                    <!-- struttura tabella di sinistra-->
                     <div class="row">
-                        <div class="col-lg-8">
+                        <div class="col-lg-8 col-md-8">
+                            <!-- struttura tabella prossime classi -->
                             <div class="title-table">
                                 <h3>Prossime classi</h3>
                             </div>
@@ -115,7 +190,7 @@
                                         <table class="table table-hover">
                                             <thead>
                                                 <tr>
-                                                <th scope="col">Nome</th>
+                                                <th class="n" scope="col">Nome</th>
                                                 <th scope="col">Data inizio</th>
                                                 <th scope="col">Roi</th>
                                                 <th scope="col">Stato</th>
@@ -251,8 +326,8 @@
 
                         </div>     
                     
-                        <!-- seconda colonna -->
-                        <div class="col-lg-4">
+                        <!-- struttura colonna destra -->
+                        <div class="col-lg-4 col-md-4 ">
                             
                             <!-- struttura todo -->
                             <div class="title-table">

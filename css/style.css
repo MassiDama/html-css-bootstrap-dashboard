@@ -88,7 +88,7 @@ header {
 
 /* stili nav bar content */
 .nav-content {
-    height: 100px;
+    min-height: 100px;
     width: 100%;
     /* display: flex; */
     padding: 20px;
@@ -98,8 +98,14 @@ header {
 
 .nav-content span{
     font-size: 14px;
-    padding-right: 5px;
+}
 
+.title-nav span{
+    margin: 0 2px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color:#165bba;
+    font-size: 13px;
 }
 
 h1 {
@@ -107,15 +113,26 @@ h1 {
     font-size: 30px;
 }
 
- 
-
- .number {
+.number {
     display: flex;
     flex-direction: column;
- } 
+ }
+
+.new {
+    display: flex;
+    align-items: center;
+}
+
+ .student i {
+    font-size: 30px;
+    padding-left: 10px;
+ }
 
  
+.table-prossime-classi img{
+    width: 20px;
 
+}
 
 
 

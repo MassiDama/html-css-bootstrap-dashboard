@@ -32,10 +32,19 @@
                 </datalist>
             </div>
             <div class="iconhead">
-                <i class="fa-solid fa-list"></i>
-                <i class="fa-solid fa-circle-question"></i>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-
+                <div class="icon">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-circle-question"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <div class="campanellino">
+                    <i class="fa-solid fa-bell" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Profilo</a></li>
+                      <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
             </div>    
     </header>
 
@@ -71,16 +80,18 @@
                 <!-- contenuto nav content -->
                 <section class="nav-content">
                     <div class="row">
-                        <div class="col-lg-6 col-md-5">
+                        <div class="col-12 col-lg-6 col-md-5 col-sd-5">
                             <div class="title-nav">
                                 <div class="title">
                                     <h1>Boolean</h1>
                                     <span>Piano blaze</span>  
                                 </div>
-                                <div class="breadcrumb-title">
-                                    <span>3 app</span>
-                                    <div>&raquo;</div>
-                                    <div class="breadcrumb">
+                                <div class="breadcrumb">
+                                    <div class="breadcrumb-title">
+                                        <span>3 app</span>
+                                        <div>&raquo;</div>
+                                    </div>
+                                    <div class="breadcrumb-app">
                                         <span>Boolean mobile app</span>
                                         <span>Boolean web app</span>
                                         <span>Boolean blog app</span>
@@ -91,13 +102,13 @@
                                 </div>
                             </div>    
                         </div>
-                        <div class="col-lg-4 col-md-4">
+                        <div class="col-12 col-lg-4 col-md-4 col-sd-4">
                             <div class="student number">
                                 <span>Studenti online negli ultimi 30 minuti</span>
                                 <h3>125</h3>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-3">
+                        <div class="col-12 col-lg-2 col-md-3 col-sd-4">
                             <div class="student new">
                                 <span>Nuovi Studenti</span>
                                 <!-- layout bootstrap (forms) -->
@@ -180,7 +191,7 @@
                     
                     <!-- struttura tabella di sinistra-->
                     <div class="row">
-                        <div class="col-lg-8 col-md-8">
+                        <div class="col-12 col-lg-8 col-ms-8 col-sd-8">
                             <!-- struttura tabella prossime classi -->
                             <div class="title-table">
                                 <h3>Prossime classi</h3>
@@ -191,7 +202,7 @@
                                             <thead>
                                                 <tr>
                                                 <th class="n" scope="col">Nome</th>
-                                                <th scope="col">Data inizio</th>
+                                                <th class="data" scope="col">Data inizio</th>
                                                 <th scope="col">Roi</th>
                                                 <th scope="col">Stato</th>
                                                 <th scope="col">Azioni</th>
@@ -200,80 +211,80 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="n"><img src="img /class-avatar.jpg" alt="foto class avatar"> Classe 75</td>
-                                                    <td>15 Febbraio 2021</td>
+                                                    <td class="data">15 Febbraio 2021</td>
                                                     <td>20%</td>
                                                     <td><span class="badge text-bg-success">Done</span> </td> 
-                                                    <td>
+                                                    <td class="b">
                                                         <button type="button" class="btn btn-light"><i class="fa-solid fa-pen"></i></button>
                                                         <button type="button" class="btn btn-light"><i class="fa-solid fa-trash"></i></button>
                                                     </td>                                          
                                                 </tr>
                                                 <tr>
                                                     <td class="n"><img src="img /class-avatar.jpg" alt="foto class avatar"> Classe 76</td>
-                                                    <td>16 Febbraio 2021</td>
+                                                    <td class="data">16 Febbraio 2021</td>
                                                     <td>20%</td>
                                                     <td><span class="badge text-bg-success">Done</span> </td> 
-                                                    <td>
+                                                    <td class="b">
                                                         <button type="button" class="btn btn-light"><i class="fa-solid fa-pen"></i></button>
                                                         <button type="button" class="btn btn-light"><i class="fa-solid fa-trash"></i></button>
                                                     </td>     
                                                 </tr>
                                                 <tr>
                                                     <td class="n"><img src="img /class-avatar.jpg" alt="foto class avatar"> Classe 77</td>
-                                                    <td>17 Febbraio 2021</td>
+                                                    <td class="data">17 Febbraio 2021</td>
                                                     <td>20%</td>
                                                     <td><span class="badge text-bg-warning">Process</span></td> 
-                                                    <td>
+                                                    <td class="b">
                                                         <button type="button" class="btn btn-light"><i class="fa-solid fa-pen"></i></button>
                                                         <button type="button" class="btn btn-light"><i class="fa-solid fa-trash"></i></button>
                                                     </td>     
                                                 </tr>
                                                 <tr>
                                                     <td class="n"><img src="img /class-avatar.jpg" alt="foto class avatar"> Classe 78</td>
-                                                    <td>18 Febbraio 2021</td>
+                                                    <td class="data">18 Febbraio 2021</td>
                                                     <td>20%</td>
                                                     <td><span class="badge text-bg-success">Done</span></td> 
-                                                    <td>
+                                                    <td class="b">
                                                         <button type="button" class="btn btn-light"><i class="fa-solid fa-pen"></i></button>
                                                         <button type="button" class="btn btn-light"><i class="fa-solid fa-trash"></i></button>
                                                     </td>     
                                                 </tr>
                                                 <tr>
                                                     <td class="n"><img src="img /class-avatar.jpg" alt="foto class avatar"> Classe 79</td>
-                                                    <td>19 Febbraio 2021</td>
+                                                    <td class="data">19 Febbraio 2021</td>
                                                     <td>20%</td>
                                                     <td><span class="badge text-bg-danger">Failed</span></td> 
-                                                    <td>
+                                                    <td class="b">
                                                         <button type="button" class="btn btn-light"><i class="fa-solid fa-pen"></i></button>
                                                         <button type="button" class="btn btn-light"><i class="fa-solid fa-trash"></i></button>
                                                     </td>     
                                                 </tr>
                                                 <tr>
                                                     <td class="n"><img src="img /class-avatar.jpg" alt="foto class avatar"> Classe 80</td>
-                                                    <td>20 Febbraio 2021</td>
+                                                    <td class="data">20 Febbraio 2021</td>
                                                     <td>20%</td>
                                                     <td><span class="badge text-bg-success">Done</span></td> 
-                                                    <td>
+                                                    <td class="b">
                                                         <button type="button" class="btn btn-light"><i class="fa-solid fa-pen"></i></button>
                                                         <button type="button" class="btn btn-light"><i class="fa-solid fa-trash"></i></button>
                                                     </td>     
                                                 </tr>
                                                 <tr>
                                                     <td class="n"><img src="img /class-avatar.jpg" alt="foto class avatar"> Classe 81</td>
-                                                    <td>21 Febbraio 2021</td>
+                                                    <td class="data">21 Febbraio 2021</td>
                                                     <td>20%</td>
                                                     <td><span class="badge text-bg-danger">Failed</span></td> 
-                                                    <td>
+                                                    <td class="b">
                                                         <button type="button" class="btn btn-light"><i class="fa-solid fa-pen"></i></button>
                                                         <button type="button" class="btn btn-light"><i class="fa-solid fa-trash"></i></button>
                                                     </td>     
                                                 </tr>
                                                 <tr>
                                                     <td class="n"><img src="img /class-avatar.jpg" alt="foto class avatar"> Classe 82</td>
-                                                    <td>22 Febbraio 2021</td>
+                                                    <td class="data">22 Febbraio 2021</td>
                                                     <td>20%</td>
                                                     <td><span class="badge text-bg-success">Done</span></td> 
-                                                    <td>
+                                                    <td class="b">
                                                         <button type="button" class="btn btn-light"><i class="fa-solid fa-pen"></i></button>
                                                         <button type="button" class="btn btn-light"><i class="fa-solid fa-trash"></i></button>
                                                     </td>     
@@ -327,7 +338,7 @@
                         </div>     
                     
                         <!-- struttura colonna destra -->
-                        <div class="col-lg-4 col-md-4 ">
+                        <div class="col-12 col-lg-4 col-ms-4 col-sd-4">
                             
                             <!-- struttura todo -->
                             <div class="title-table">
